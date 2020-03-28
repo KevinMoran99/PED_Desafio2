@@ -35,11 +35,11 @@ namespace PED_Desafio2_MA171622_MG171623
             }
         }
 
-        public void Eliminar(char dato)
+        public void  Eliminar(char dato)
         {
             if (Raiz == null)
             {
-                Raiz = new ALV(dato, null, null, null);
+               Raiz = new ALV(dato, null, null, null);
             }
             else
             {

@@ -102,7 +102,7 @@ namespace PED_Desafio2_MA171622_MG171623
         }
 
         ALV nodoE, nodoP;
-        public ALV Eliminar(int valorEliminar, ref ALV Raiz)
+        public ALV Eliminar(char valorEliminar, ref ALV Raiz)
         {
             if(Raiz != null)
             {
@@ -120,11 +120,12 @@ namespace PED_Desafio2_MA171622_MG171623
                     }
                     else
                     {
-                        ALV NodoEliminar = Raiz;
-                        if(NodoEliminar.NodoDerecho == null)
+                        nodoE = Raiz;
+                        if(nodoE.NodoDerecho == null)
                         {
-                            Raiz = NodoEliminar.NodoIzquierdo;
+                            Raiz = nodoE.NodoIzquierdo;
 
+                            
                             if(Alturas(nodoE.NodoIzquierdo) - Alturas(nodoE.NodoDerecho) == 2)
                             {
                                 if(valorEliminar < nodoE.valor)
@@ -155,9 +156,9 @@ namespace PED_Desafio2_MA171622_MG171623
                         }
                         else
                         {
-                            if(NodoEliminar.NodoIzquierdo == null)
+                            if(nodoE.NodoIzquierdo == null)
                             {
-                                Raiz = NodoEliminar.NodoDerecho;
+                                Raiz = nodoE.NodoDerecho;
                             }
                             else
                             {
@@ -173,7 +174,7 @@ namespace PED_Desafio2_MA171622_MG171623
                                         Bandera = true;
                                     }
                                     Raiz.valor = Auxiliar.valor;
-                                    NodoEliminar = Auxiliar;
+                                    nodoE = Auxiliar;
                                     if(Bandera)
                                     {
                                         AuxiliarNodo.NodoDerecho = Auxiliar.NodoIzquierdo;
@@ -197,7 +198,7 @@ namespace PED_Desafio2_MA171622_MG171623
                                             Bandera = true;
                                         }
                                         Raiz.valor = Auxiliar.valor;
-                                        NodoEliminar = Auxiliar;
+                                        nodoE = Auxiliar;
                                         if (Bandera)
                                         {
                                             AuxiliarNodo.NodoIzquierdo = Auxiliar.NodoDerecho;
@@ -222,7 +223,7 @@ namespace PED_Desafio2_MA171622_MG171623
                                                 Bandera = true;
                                             }
                                             Raiz.valor = Auxiliar.valor;
-                                            NodoEliminar = Auxiliar;
+                                            nodoE = Auxiliar;
                                             if (Bandera)
                                             {
                                                 AuxiliarNodo.NodoDerecho = Auxiliar.NodoIzquierdo;

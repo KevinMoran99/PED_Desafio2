@@ -7,3 +7,12 @@ X:\Documentos\0-UDB\2020 C1\PED\Desafio 2\PED_Desafio2_MA171622_MG171623\PED_Des
 X:\Documentos\0-UDB\2020 C1\PED\Desafio 2\PED_Desafio2_MA171622_MG171623\PED_Desafio2_MA171622_MG171623\obj\Debug\PED_Desafio2_MA171622_MG171623.csproj.GenerateResource.cache
 X:\Documentos\0-UDB\2020 C1\PED\Desafio 2\PED_Desafio2_MA171622_MG171623\PED_Desafio2_MA171622_MG171623\obj\Debug\PED_Desafio2_MA171622_MG171623.exe
 X:\Documentos\0-UDB\2020 C1\PED\Desafio 2\PED_Desafio2_MA171622_MG171623\PED_Desafio2_MA171622_MG171623\obj\Debug\PED_Desafio2_MA171622_MG171623.pdb
+D:\Mis archivos\UDB\Ciclo 05\PED\PED_Desafio2\PED_Desafio2_MA171622_MG171623\bin\Debug\PED_Desafio2_MA171622_MG171623.exe.config
+D:\Mis archivos\UDB\Ciclo 05\PED\PED_Desafio2\PED_Desafio2_MA171622_MG171623\bin\Debug\PED_Desafio2_MA171622_MG171623.exe
+D:\Mis archivos\UDB\Ciclo 05\PED\PED_Desafio2\PED_Desafio2_MA171622_MG171623\bin\Debug\PED_Desafio2_MA171622_MG171623.pdb
+D:\Mis archivos\UDB\Ciclo 05\PED\PED_Desafio2\PED_Desafio2_MA171622_MG171623\obj\Debug\PED_Desafio2_MA171622_MG171623.csprojAssemblyReference.cache
+D:\Mis archivos\UDB\Ciclo 05\PED\PED_Desafio2\PED_Desafio2_MA171622_MG171623\obj\Debug\PED_Desafio2_MA171622_MG171623.Form1.resources
+D:\Mis archivos\UDB\Ciclo 05\PED\PED_Desafio2\PED_Desafio2_MA171622_MG171623\obj\Debug\PED_Desafio2_MA171622_MG171623.Properties.Resources.resources
+D:\Mis archivos\UDB\Ciclo 05\PED\PED_Desafio2\PED_Desafio2_MA171622_MG171623\obj\Debug\PED_Desafio2_MA171622_MG171623.csproj.GenerateResource.cache
+D:\Mis archivos\UDB\Ciclo 05\PED\PED_Desafio2\PED_Desafio2_MA171622_MG171623\obj\Debug\PED_Desafio2_MA171622_MG171623.exe
+D:\Mis archivos\UDB\Ciclo 05\PED\PED_Desafio2\PED_Desafio2_MA171622_MG171623\obj\Debug\PED_Desafio2_MA171622_MG171623.pdb

@@ -71,9 +71,12 @@
             this.lblMove = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDelete = new System.Windows.Forms.TextBox();
             this.grbKeyboard.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.grbArbol.SuspendLayout();
+            this.pnlArbol.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -486,6 +489,8 @@
             // 
             // pnlArbol
             // 
+            this.pnlArbol.Controls.Add(this.txtDelete);
+            this.pnlArbol.Controls.Add(this.label2);
             this.pnlArbol.Location = new System.Drawing.Point(6, 19);
             this.pnlArbol.Name = "pnlArbol";
             this.pnlArbol.Size = new System.Drawing.Size(953, 316);
@@ -565,6 +570,23 @@
             this.label1.TabIndex = 8;
             this.label1.Text = resources.GetString("label1.Text");
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(803, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Eliminar objeto del arbol";
+            // 
+            // txtDelete
+            // 
+            this.txtDelete.Location = new System.Drawing.Point(806, 59);
+            this.txtDelete.Name = "txtDelete";
+            this.txtDelete.Size = new System.Drawing.Size(115, 20);
+            this.txtDelete.TabIndex = 1;
+            this.txtDelete.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtDelete_KeyUp);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -582,9 +604,12 @@
             this.Controls.Add(this.grbKeyboard);
             this.Name = "Form1";
             this.Text = "Desafio 2";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.grbKeyboard.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.grbArbol.ResumeLayout(false);
+            this.pnlArbol.ResumeLayout(false);
+            this.pnlArbol.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -634,6 +659,8 @@
         private System.Windows.Forms.Label lblMove;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtDelete;
+        private System.Windows.Forms.Label label2;
     }
 }
 

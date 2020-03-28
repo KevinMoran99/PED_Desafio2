@@ -15,14 +15,14 @@ namespace PED_Desafio2_MA171622_MG171623
     {
         Stack<char> inStack = new Stack<char>();
         Stack<char> outStack = new Stack<char>();
-
+        List<char> allData = new List<char>();
         DibujaALV arbolALV = new DibujaALV(null);
         Graphics g;
 
 
         char dato = ' ';
         char datb = ' ';
-
+        
         int timerCont = 0;
 
         Thread helperThread;
@@ -45,6 +45,20 @@ namespace PED_Desafio2_MA171622_MG171623
                 lstInStack.SelectedIndex = 0;
             }
             lstInStack.Refresh();
+        }
+
+        private void refreshOutList()
+        {
+            lstOutStack.Items.Clear();
+            foreach (char letter in outStack)
+            {
+                lstOutStack.Items.Add(letter);
+            }
+            if (lstOutStack.Items.Count > 0)
+            {
+                lstOutStack.SelectedIndex = 0;
+            }
+            lstOutStack.Refresh();
         }
 
         //Switching between the buttons being enabled or disabled
@@ -89,10 +103,11 @@ namespace PED_Desafio2_MA171622_MG171623
         {
             try
             {
+                
                 //Pops the inStack
                 dato = inStack.Pop();
                 refreshInList();
-
+                allData.Add(dato);
                 //Disables all buttons
                 toggleButtons();
 
@@ -139,6 +154,55 @@ namespace PED_Desafio2_MA171622_MG171623
                 toggleButtons();
                 Refresh();
                 Refresh();
+                refreshOutList();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtDelete_KeyUp(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                dato = char.Parse(txtDelete.Text.ToUpper());
+                bool flag = false;
+
+                foreach(char c in allData)
+                {
+                    if(c == dato)
+                    {
+                        flag = true;
+                    }
+                }
+                if (flag)
+                {
+                    arbolALV.Eliminar(dato);
+
+                    //refreshInList();
+
+                    //Disables all buttons
+                    toggleButtons();
+                    
+                    //Begins letter move animation
+                    moveLetter(dato, 550);
+
+                    allData.Remove(dato);
+                    //Adds the letter in a different thread
+                    //This thread is started once the moveLetter animation ends
+                    helperThread = new Thread(delegate () { outStack.Push(dato); });
+                }
+
+                txtDelete.Clear();
+            
+            }
+            catch
+            {
+                Refresh();
+                Refresh();
+                MessageBox.Show("No se encontro el dato especificado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

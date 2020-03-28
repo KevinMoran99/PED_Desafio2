@@ -180,8 +180,7 @@ namespace PED_Desafio2_MA171622_MG171623
                 if (flag)
                 {
                     arbolALV.Eliminar(dato);
-
-                    //refreshInList();
+                    Refresh();
 
                     //Disables all buttons
                     toggleButtons();
